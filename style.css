@@ -6,6 +6,11 @@
 body{
     background: #f6f7f8;
 }
+button{
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
 
 /* header */
 header{
@@ -24,8 +29,8 @@ header{
     align-items: center;
 }
 header img{
-    width: 128px;
-    height: 128px;
+    width: 150px;
+    height: 150px;
     border-radius: 100%;    /* Arredondamento */
 }
 header img:hover{
@@ -43,6 +48,7 @@ header h1{
 header span{
     color: white;
     font-weight: 500;
+    margin: 4px 0;
 }
 .date{
     background-color: rgb(22, 163, 74);
@@ -50,6 +56,12 @@ header span{
     border-radius: 8px;
     margin-top: 20px;
     font-weight: 500;
+}
+.isopen{
+    background-color: rgb(22, 163, 74);
+}
+.isclosed{
+    background-color: rgb(239, 68, 68);
 }
 
 /* title-menu */
@@ -90,8 +102,8 @@ header span{
     gap: 8px;
 }
 .product img{
-    width: 112px;
-    height: 112px;
+    width: 120px;
+    height: 120px;
     border-radius: 6px;
 }
 .product img:hover{
@@ -104,17 +116,23 @@ header span{
     line-height: 20px;
     letter-spacing: 2px;    /* espaçamento das letras */
 }
-.buy{
+p.title-product{
+    font-weight: 700; 
+    font-size: 18px; 
+    margin-bottom: 8px;
+}
+.buy-product{
     display: flex;
     align-items: center;
     gap: 8px;
     justify-content: space-between;
     margin-top: 12px;
 }
-.buy p{
+.buy-product p{
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
+
 }
 .icon button{
     background-color: rgb(17, 24, 39);
@@ -184,6 +202,13 @@ header span{
     flex-direction: column;
     margin-bottom: 8px;
 }
+.item-descrition{
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+    flex-direction: column;
+    font-weight: normal;
+}
 .modal-box p{
     font-weight: 700;
 }
@@ -201,10 +226,6 @@ header span{
     justify-content: space-between;
     margin-top: 18px;
 }
-.modal-box button{
-    border: none;
-    cursor: pointer;
-}
 .checkout-btn{
     background-color: rgb(34 197 94);
     color: white;
@@ -216,7 +237,6 @@ header span{
 footer{
     width: 100%;
     background-color: rgb(239, 68, 68);
-    padding: 12px 0;
     position: fixed;
     bottom: 0px;        /* posiciona o elemento da página na área inferior da tela */
     z-index: 40;
@@ -231,8 +251,9 @@ footer button{
     gap: 8px;
     color: white;
     font-weight: 700;
-    cursor: pointer;
-    border: none;
+    padding: 12px;
+    min-width: 100%; 
+    justify-content: center;
 }
 footer button i{
     font-size: 18px;
