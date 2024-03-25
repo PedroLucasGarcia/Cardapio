@@ -1,55 +1,68 @@
+/*geral*/
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    margin: 0;  
+    padding: 0; 
+    font-family: 'Montserrat', sans-serif; 
 }
 body{
-    background: #f6f7f8;
+    background: #f6f7f8;    
 }
+/*formatações gerais dos botões*/
 button{
     border: none;
     cursor: pointer;
-    background-color: white;
+    background-color: white;    
 }
 
-/* header */
+/*--------------------------*/
+
+/*header*/
 header{
     width: 100%;
     height: 420px;
     background-image: url(./img/bg.png);
-    background-size: cover;     /* Dimensiona a imagem para o menor tamanho possível para caber no contêiner */
+    background-size: cover;     /*dimensiona a imagem para o menor tamanho possível para caber no contêiner*/
     background-position: center; 
 }
+/*conteúdo do header*/
 .header{
-    width: 100%;
+    width: 100%;    /*% = tamanho completo do conteiner pai*/
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex;  /*torna o conteúdo flexivel*/
+    flex-direction: column; /*todo o conteúdo será disposto em uma única coluna verticalmente*/
+    justify-content: center;    /*alinha o conteúdo horizontalmente no centro*/
+    align-items: center;    /*alinha o conteúdo verticalmente no centro*/
 }
-header img{
+/*logo*/
+.header img{
     width: 150px;
     height: 150px;
-    border-radius: 100%;    /* Arredondamento */
+    border-radius: 100%;    /*arredondamento*/
 }
-header img:hover{
-    scale: 110%;            /* quando passar o mouse a escala cresce 10% */
-    transition-duration: 200ms;
+.header img:hover{
+    transition-duration: 200ms; /*duração da animação*/
 }
-header h1{
-    font-size: 36px;
-    line-height: 40px;
+/*Nome*/
+.header h1{
+    font-size: 36px;    /*tamanho da fonte*/   
+    line-height: 40px;  /*altura da linha de texto*/
     margin-top: 16px;
     margin-bottom: 8px;
-    font-weight: 700;     /* negrito */  
+    font-weight: 700;  /*negrito*/
     color: white;
 }
-header span{
+/*span do header*/
+.header span{
     color: white;
     font-weight: 500;
     margin: 4px 0;
 }
+/*icone do whatsapp*/
+.header span span i{
+    scale: 120%; /*escala(tamanho)*/
+    margin-right: 2px;
+}
+/*funcionamento*/
 .date{
     background-color: rgb(22, 163, 74);
     padding: 4px 16px; 
@@ -57,46 +70,41 @@ header span{
     margin-top: 20px;
     font-weight: 500;
 }
+/*quando estiver aberto*/
 .isopen{
     background-color: rgb(22, 163, 74);
 }
+/*quando estiver fechado*/
 .isclosed{
     background-color: rgb(239, 68, 68);
 }
 
-/* title-menu */
+/*--------------------------*/
+
+/*título do menu*/
 .title-menu {
-    font-size: 24px;        /* tamanho da fonte */
-    line-height: 32px;      /* altura da linha de texto */
+    font-size: 24px;       
+    line-height: 32px;      
     font-weight: 700;
-    text-align: center;
+    text-align: center; 
     margin-top: 36px;
     margin-bottom: 30px;
 }
-@media (min-width: 768px) { /* dispositivos com a largura maior que 768px */
-    .title-menu {
-        font-size: 30px;
-        line-height: 36px;
-    }
-}
 
-/* menu Burger */
+/*--------------------------*/
+
+/*menu*/
 .menu{
     display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));       /* grid de 1 coluna */
-    gap: 28px;              /* espaçamento da grid */
+    grid-template-columns: repeat(1, minmax(0, 1fr));   /*grid de 1 coluna como padrão*/
+    gap: 28px;  /*espaçamento da grid*/
     margin: 0 auto;
     padding: 0 20px;
     max-width: 1280px;
     padding-bottom: 60px;
 }
-@media (min-width: 768px) {
-    .menu{
-        grid-template-columns: repeat(2, minmax(0, 1fr));   /* grid de 2 colunas */
-        gap: 40px;
-        margin: 0 80px;
-    }
-}
+
+/*items(produtos) dentro da grid*/
 .product{
     display: flex;
     gap: 8px;
@@ -108,19 +116,21 @@ header span{
 }
 .product img:hover{
     scale: 110%;
-    rotate: -2deg;          /* rotação */
-    transition-duration: 300ms;     /* duração da animação(transição) */
+    rotate: -2deg;          /*rotação*/
+    transition-duration: 300ms;
 }
 .product-descrition p{
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 2px;    /* espaçamento das letras */
+    letter-spacing: 2px;    /*espaçamento das letras*/
 }
 p.title-product{
     font-weight: 700; 
     font-size: 18px; 
     margin-bottom: 8px;
 }
+
+/*botão de adicionar ao carrinho*/
 .buy-product{
     display: flex;
     align-items: center;
@@ -146,48 +156,45 @@ p.title-product{
     line-height: 28px;
 }
 
-/* menu drink */
+/*--------------------------*/
+
+/* bebidas */
 .title-drinks{
     margin: 0 auto 30px auto;
     max-width: 1280px;
     padding: 0 8px;
     text-align: center;
 }
+/*título das bebidas*/
 .title-drinks h2{
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
 }
-@media (min-width: 768px) {
-    .title-drinks h2 {
-        font-size: 30px;
-        line-height: 36px;
-    }
-}
+
+/*--------------------------*/
 
 /* modal */
 .modal{
     background-color: rgb(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
-    position: fixed;        /* fixa o elemento */
+    position: fixed;        /*fixa o elemento*/
     top: 0;
     left: 0;
-    z-index: 99;            /* ordem da pilha do elemento */
+    z-index: 99;            /*ordem da pilha do elemento*/
     align-items: center;
     justify-content: center;
     display: none;
 }
+
+/*caixa do modal*/
 .modal-box{
     background-color: white;
     padding: 20px;
     border-radius: 6px;
     min-width: 80%;
-}
-@media (min-width: 768px) {
-    .modal-box{
-        min-width: 600px;
-    }
+    max-height: 80%;
 }
 .modal-box h2{
     font-weight: 700;
@@ -196,11 +203,21 @@ p.title-product{
     line-height: 32px;
     margin-bottom: 8px;
 }
+/*itens do carrinho*/
 .modal-items{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     margin-bottom: 8px;
+    max-height: 300px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 10px 10px 0 10px;
+    
+}
+/*botão de remover item do carrinho*/
+.modal-items button{
+    margin-right: 10px;
 }
 .item-descrition{
     display: flex; 
@@ -212,9 +229,19 @@ p.title-product{
 .modal-box p{
     font-weight: 700;
 }
+.modal-box .title-address{
+    margin-top: 16px;
+}
+/*mensagem quando não colocar o endereço*/
+.modal-box .address-warn{
+    color: rgb(239 68 68); 
+    font-weight: normal; 
+    font-size: 13px; 
+    display: none;
+}
 .modal-box input{
     width: 100%;
-    border-width: 1px;      /* largura da borda */
+    border-width: 1px;      /*largura da borda*/
     padding: 4px;
     margin: 4px 0;
     border-radius: 4px;
@@ -226,6 +253,7 @@ p.title-product{
     justify-content: space-between;
     margin-top: 18px;
 }
+
 .checkout-btn{
     background-color: rgb(34 197 94);
     color: white;
@@ -233,12 +261,14 @@ p.title-product{
     border-radius: 4px;
 }
 
-/* footer */
+/*--------------------------*/
+
+/*footer (carrinho)*/
 footer{
     width: 100%;
     background-color: rgb(239, 68, 68);
     position: fixed;
-    bottom: 0px;        /* posiciona o elemento da página na área inferior da tela */
+    bottom: 0px;        /*posiciona o elemento da página na área inferior da tela*/
     z-index: 40;
     display: flex;
     justify-content: center;
@@ -248,15 +278,62 @@ footer button{
     background-color: rgb(239, 68, 68);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     color: white;
     font-weight: 700;
     padding: 12px;
     min-width: 100%; 
-    justify-content: center;
 }
 footer button i{
     font-size: 18px;
     line-height: 28px;
     color: white;
+}
+
+/*--------------------------*/
+
+/* dispositivos com largura máxima de 300px */
+@media (max-height: 300px) {
+    .modal-box{
+        padding: 5px 20px;
+        max-height: 90%;
+    }
+    .modal-items{
+        max-height: 70px;
+    }
+    .modal-box-btn{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2px;
+    }
+}
+
+/* dispositivos com largura mínima de 300.1px máxima de 599px */
+@media (min-height: 300.1px) and (max-height: 600px) {
+    .modal-items{
+        max-height: 100px;
+    }
+}
+
+/* dispositivos de tamanho médio ou superior */
+@media (min-width: 768px) { 
+    .title-menu {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .menu{
+        grid-template-columns: repeat(2, minmax(0, 1fr));   /*grid de 2 colunas quando houver espaço*/
+        gap: 40px;
+        margin: 0 80px;
+    }
+    .title-drinks h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .modal-box{
+        min-width: 600px;
+    }
 }
