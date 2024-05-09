@@ -17,13 +17,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
-    <title>Top Burguer</title>
+    <title>La Bella Cucina</title>
 </head>
 <body>
     <header>
         <div class="header">
-            <img src="./img/hamb-3.png" alt="Logo Top Burguer">
-            <h1>Top Burguer</h1>
+            <!--<img src="./img/hamb-3.png" alt="Logo Top Burguer">-->
+            <h1>La Bella Cucina</h1>
             <span>Rua Rio - 10, Rio de Janeiro - RJ</span>
             <span><span><i class="fa-brands fa-whatsapp"></i></span> (21) 99999-9999</span>
             <div class="date isclosed isopen" id="date">
@@ -32,7 +32,93 @@
         </div>
     </header>
 
-    <h2 class="title-menu">Menu</h2>
+    <h2 class="title-menu">Peixes</h2>
+
+    <div id="menu">
+        <main class="menu">
+            <div class="product">
+                <img src="./img/salmao.jpg" alt="Salmão com creme de espinafre">
+                <div class="product-descrition">
+                    <p class="title-product">Salmão com creme de espinafre.</p>
+                    <div class="buy-product">
+                        <p>R$ 90</p>
+                        <div class="icon">
+                            <button data-name="Salmão com creme de espinafre" data-price="90" title="Adicionar ao carrinho" class="add-to-cart-btn">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./img/camarao.jpg" alt="Caixote de Camarões acompanhado de riso pastine">
+                <div class="product-descrition">
+                    <p class="title-product">Caixote de Camarões acompanhado de riso pastine</p>
+                    <div class="buy-product">
+                        <p>R$ 100</p>
+                        <div class="icon">
+                            <button data-name="Caixote de Camarões acompanhado de riso pastine" data-price="100" title="Adicionar ao carrinho" class="add-to-cart-btn">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./img/bacalhau.jpg" alt="Bacalhau ao forno">
+                <div class="product-descrition">
+                    <p class="title-product">Bacalhau ao forno</p>
+                    <div class="buy-product">
+                        <p>R$ 110</p>
+                        <div class="icon">
+                            <button data-name="Bacalhau ao forno" data-price="110" title="Adicionar ao carrinho" class="add-to-cart-btn">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    <h2 class="title-menu">Massas</h2>
+
+    <main class="menu">
+        <div class="product">
+            <img src="./img/macarrao.jpg" alt="Espaguete com tomates, azeitonas pretas, queijo feta e manjericão">
+            <div class="product-descrition">
+                <p class="title-product">Espaguete com tomates, azeitonas pretas e manjericão.
+                </p>
+                <div class="buy-product">
+                    <p>R$ 60</p>
+                    <div class="icon">
+                        <button data-name="Espaguete com tomates, azeitonas pretas, queijo feta e manjericão" data-price="60" title="Adicionar ao carrinho" class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="./img/pizza.jpg" alt="Pizza Napolitana">
+            <div class="product-descrition">
+                <p class="title-product">Pizza Napolitana - 35 cm</p>
+                <div class="buy-product">
+                    <p>R$ 50</p>
+                    <div class="icon">
+                        <button data-name="Pizza Napolitana" data-price="50" title="Adicionar ao carrinho" class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <h2 class="title-menu">Hamburguers</h2>
 
     <div id="menu">
         <main class="menu">
@@ -40,11 +126,10 @@
                 <img src="./img/hamb-1.png" alt="Smash Burguer">
                 <div class="product-descrition">
                     <p class="title-product">Smash Burguer</p>
-                    <p>Pão levinho de fermentação natural da Trigou, 2 hamburguers (160g), queijo, bacon, molho especial.</p>
                     <div class="buy-product">
-                        <p>R$ 28.90</p>
+                        <p>R$ 28</p>
                         <div class="icon">
-                            <button data-name="Smash Burguer" data-price="28.90" title="Adicionar ao carrinho" class="add-to-cart-btn">
+                            <button data-name="Smash Burguer" data-price="28" title="Adicionar ao carrinho" class="add-to-cart-btn">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </button>
                         </div>
@@ -56,11 +141,10 @@
                 <img src="./img/hamb-2.png" alt="Bacon Burger">
                 <div class="product-descrition">
                     <p class="title-product">Bacon Burger</p>
-                    <p>Pão levinho de fermentação natural da Trigou, 2 hamburguers (160g), queijo, bacon, molho especial.</p>
                     <div class="buy-product">
-                        <p>R$ 34.90</p>
+                        <p>R$ 34</p>
                         <div class="icon">
-                            <button data-name="Bacon Burger" data-price="34.90" title="Adicionar ao carrinho" class="add-to-cart-btn">
+                            <button data-name="Bacon Burger" data-price="34" title="Adicionar ao carrinho" class="add-to-cart-btn">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </button>
                         </div>
@@ -72,11 +156,10 @@
                 <img src="./img/hamb-3.png" alt="Top Burger">
                 <div class="product-descrition">
                     <p class="title-product">Top Burger</p>
-                    <p>Pão levinho de fermentação natural da Trigou, 2 hamburguers (160g), queijo, bacon, molho especial.</p>
                     <div class="buy-product">
-                        <p>R$ 42.90</p>
+                        <p>R$ 42</p>
                         <div class="icon">
-                            <button data-name="Top Burger" data-price="42.90" title="Adicionar ao carrinho" class="add-to-cart-btn">
+                            <button data-name="Top Burger" data-price="42" title="Adicionar ao carrinho" class="add-to-cart-btn">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </button>
                         </div>
@@ -88,11 +171,10 @@
                 <img src="./img/hamb-4.png" alt="Big Burguer">
                 <div class="product-descrition">
                     <p class="title-product">Big Burguer</p>
-                    <p>Pão levinho de fermentação natural da Trigou, 2 hamburguers (160g), queijo, bacon, molho especial.</p>
                     <div class="buy-product">
-                        <p>R$ 24.90</p>
+                        <p>R$ 24</p>
                         <div class="icon">
-                            <button data-name=" Big Burguer" data-price="24.90" title="Adicionar ao carrinho" class="add-to-cart-btn">
+                            <button data-name=" Big Burguer" data-price="24" title="Adicionar ao carrinho" class="add-to-cart-btn">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </button>
                         </div>
@@ -104,11 +186,10 @@
                 <img src="./img/hamb-5.png" alt="Crispy Burguer">
                 <div class="product-descrition">
                     <p class="title-product">Crispy Burguer</p>
-                    <p>Pão levinho de fermentação natural da Trigou, 2 hamburguers (160g), queijo, bacon, molho especial.</p>
                     <div class="buy-product">
-                        <p>R$ 39.90</p>
+                        <p>R$ 39</p>
                         <div class="icon">
-                            <button data-name="Crispy Burguer" data-price="39.90" title="Adicionar ao carrinho" class="add-to-cart-btn">
+                            <button data-name="Crispy Burguer" data-price="39" title="Adicionar ao carrinho" class="add-to-cart-btn">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </button>
                         </div>
@@ -120,11 +201,10 @@
                 <img src="./img/hamb-6.png" alt="Vegan Burger">
                 <div class="product-descrition">
                     <p class="title-product">Vegan Burger</p>
-                    <p>Pão levinho de fermentação natural da Trigou, 2 hamburguers (160g), queijo, bacon, molho especial.</p>
                     <div class="buy-product">
-                        <p>R$ 32.90</p>
+                        <p>R$ 32</p>
                         <div class="icon">
-                            <button data-name="Vegan Burger" data-price="32.90" title="Adicionar ao carrinho" class="add-to-cart-btn">
+                            <button data-name="Vegan Burger" data-price="32" title="Adicionar ao carrinho" class="add-to-cart-btn">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </button>
                         </div>
@@ -133,9 +213,7 @@
             </div>
         </main>
 
-        <div class="title-drinks">
-            <h2>Bebidas</h2>
-        </div>
+        <h2 class="title-menu">Bebidas</h2>
 
         <div class="menu">
             <div class="product" style="width: 100%;">
@@ -145,7 +223,7 @@
                     <div class="buy-product">
                         <p>R$ 6</p>
                         <div class="icon">
-                            <button data-name="Coca-Cola (lata)" data-price="6.00" title="Adicionar ao carrinho" class="add-to-cart-btn">
+                            <button data-name="Coca-Cola (lata)" data-price="6" title="Adicionar ao carrinho" class="add-to-cart-btn">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </button>
                         </div>
@@ -160,7 +238,37 @@
                     <div class="buy-product">
                         <p>R$ 6</p>
                         <div class="icon">
-                            <button data-name="Guaraná (lata)" data-price="6.00" title="Adicionar ao carrinho" class="add-to-cart-btn">
+                            <button data-name="Guaraná (lata)" data-price="6" title="Adicionar ao carrinho" class="add-to-cart-btn">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product" style="width: 100%;">
+                <img src="./img/suco-uva.png" alt="Guaraná (lata)">
+                <div class="product-descrition" style="width: 100%;">
+                    <p class="title-product">Suco de uva (1L)</p>
+                    <div class="buy-product">
+                        <p>R$ 14</p>
+                        <div class="icon">
+                            <button data-name="Suco de uva (1L)" data-price="14" title="Adicionar ao carrinho" class="add-to-cart-btn">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product" style="width: 100%;">
+                <img src="./img/suco-laranja.jpg" alt="Guaraná (lata)">
+                <div class="product-descrition" style="width: 100%;">
+                    <p class="title-product">Suco de laranja (1L)</p>
+                    <div class="buy-product">
+                        <p>R$ 14</p>
+                        <div class="icon">
+                            <button data-name="Suco de laranja (1L)" data-price="14" title="Adicionar ao carrinho" class="add-to-cart-btn">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </button>
                         </div>
