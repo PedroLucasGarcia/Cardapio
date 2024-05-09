@@ -19,8 +19,8 @@ button{
 /*header*/
 header{
     width: 100%;
-    height: 420px;
-    background-image: url(./img/bg.png);
+    height: 400px;
+    background-image: url(./img/bg.jpg);
     background-size: cover;     /*dimensiona a imagem para o menor tamanho possível para caber no contêiner*/
     background-position: center; 
 }
@@ -107,7 +107,10 @@ header{
 /*items(produtos) dentro da grid*/
 .product{
     display: flex;
+    align-items: center;
     gap: 8px;
+    border: 1px solid rgb(223, 221, 221);
+    border-radius: 8px;
 }
 .product img{
     width: 120px;
@@ -122,7 +125,6 @@ header{
 .product-descrition p{
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 2px;    /*espaçamento das letras*/
 }
 p.title-product{
     font-weight: 700; 
@@ -133,6 +135,7 @@ p.title-product{
 /*botão de adicionar ao carrinho*/
 .buy-product{
     display: flex;
+    width: 150px;  
     align-items: center;
     gap: 8px;
     justify-content: space-between;
@@ -154,22 +157,6 @@ p.title-product{
     color: white;
     font-size: 18px;
     line-height: 28px;
-}
-
-/*--------------------------*/
-
-/* bebidas */
-.title-drinks{
-    margin: 0 auto 30px auto;
-    max-width: 1280px;
-    padding: 0 8px;
-    text-align: center;
-}
-/*título das bebidas*/
-.title-drinks h2{
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
 }
 
 /*--------------------------*/
@@ -242,9 +229,13 @@ p.title-product{
 .modal-box input{
     width: 100%;
     border-width: 1px;      /*largura da borda*/
-    padding: 4px;
+    padding: 4px 0;
     margin: 4px 0;
     border-radius: 4px;
+}
+/*placeholder*/
+.modal-box input::placeholder{
+    padding: 0 4px;
 }
 .modal-box-btn{
     width: 100%;
@@ -266,7 +257,7 @@ p.title-product{
 /*footer (carrinho)*/
 footer{
     width: 100%;
-    background-color: rgb(239, 68, 68);
+    background-color: #bb6b45;
     position: fixed;
     bottom: 0px;        /*posiciona o elemento da página na área inferior da tela*/
     z-index: 40;
@@ -275,7 +266,7 @@ footer{
     align-items: center;
 }
 footer button{
-    background-color: rgb(239, 68, 68);
+    background-color: #bb6b45;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -327,7 +318,7 @@ footer button i{
     .menu{
         grid-template-columns: repeat(2, minmax(0, 1fr));   /*grid de 2 colunas quando houver espaço*/
         gap: 40px;
-        margin: 0 80px;
+        margin: 0 40px;
     }
     .title-drinks h2 {
         font-size: 30px;
